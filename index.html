@@ -5,10 +5,28 @@
         <meta name="viewport" content="widht-device-widht, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
         <title>wellcome to travel website</title>
     </head>
     
     <body>
+
+
+  <div id="popupmain" style="display: none;">
+
+    <div id="popup">
+        <h1 id="newhd">subscribe to our newsletter.</h1>
+        <input type="email" name="" id="emailid" placeholder="user@email.com">
+        <br>
+        <button class="submitid">subscribe</button>
+        <button class="submitid">No thanks</button>
+    </div>
+
+  </div>
+
+
 
         <header class="header">
 
@@ -62,7 +80,7 @@
         <section class="rajan">
             
             <div class="container">
-    <div class="main-box">
+           <div class="main-box">
                 <div class="box box1">
                     <i class="fas fa-route text-red"></i>
                     <h2>Adventurous</h2>
@@ -93,6 +111,21 @@
         
         <p>WORLD TRAVEL &COPY; 2024, ALL RIGTHS RESERVED</p>
         <div class="trr">
+
+
+            <script>
+
+                $(document).ready(function(){
+                    setTimeout(function() {
+                        $('#popupmain').css('display' , 'block');
+                    },5000);
+                });
+
+                $('.submitid').click(function(){
+                    $('#popupmain').css('display' , 'none');
+
+                });
+            </script>
            
         </div>
 
